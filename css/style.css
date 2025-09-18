@@ -1,43 +1,132 @@
-*{box-sizing:border-box;
-background-color: antiquewhite;}
-    
-h2{
-    background-color: white;
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; margin: 0; padding: 0; }
+a { text-decoration: none; }
+
+.bg-sky {
+  background-image: url(../img/bg-2.png);
+  color: #E8D3BB;
 }
 
-input {
-display: block;
-width: 100%;
-margin-bottom: 10px;
-border-radius: 5px;
-padding: 10px;
-background-color: white;
+.wrap {
+  width: 1140px;
+  max-width: 95vw;
+  margin: 0 auto;
 }
 
-button{
+
+.bar {
+  background: #C0C0C0; 
+  color: #fff;
+
+}
+
+.bar .wrap {
+  display: flex;
+  align-items:center;
+  padding: 12px 10px;
+}
+.brand {
+  font-weight: 800;
+  font-size: 24px;
+}
+.menu {
+  display: flex;
+  flex: 1;
+
+}
+.menu a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.layout {
+  display: flex;
+  padding: 20px 0;
+}
+.content {
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sidebar {
+  width: 320px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  padding: 12px;
+}
+.card-body h2 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+.card-body p {
+  font-size: 14px;
+  color: #555;
+  margin: 0 0 12px;
+}
+.btn-red {
+  display: inline-block;
+  background: #ff4033;
+  color: #fff;
+  padding: 6px 10px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+
+.box {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+.box h3 {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 16px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+.tutorials li {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.tutorials li img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+.ad {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+}
+
+
+@media (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+  .content, .sidebar {
     width: 100%;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: white;
+  }
 }
-
-.login-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
+@media (max-width: 640px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }
-
-.registro {
-    text-align: center;
-    margin-top: 15px;
-    background-color: white;
-}
-
-.registro a{
-    text-decoration: none;
-    background-color: white;
-}
-
