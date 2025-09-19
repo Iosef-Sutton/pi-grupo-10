@@ -7,12 +7,41 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+<header>
+     <a href="./index.html" class="logo" src="./img/Logo.png" alt=""></a>
+         <div>            
+            <nav class="nav">
+                <ul class="head">
+                    <li><a href="">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="nav">
+                <ul class="login-registro">
+                    <li><a href="./login.html">LOGIN</a></li>
+                    <li><a href="./registro.html">REGISTRO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 <div class="login-container">
         <h2>Log in</h2>
         <form action="index.html" method="get">
-            <input type="text" name="email" placeholder="Email" value="">
-            <input type="password" name="password" placeholder="Contraseña" value="">
+            <div class="div">
+                <label class="email" for="email">Email</label>
+                <input type="text" name="email" value="" placeholder="Email">
+            </div>
+
+            <div class="div">
+                <label class="pasword" for="password">Contraseña</label>
+                <input type="password" name="password" placeholder="Contraseña" value="" >
+            </div>
+       >
+             <div class="recordarme">
+                <input type="checkbox" name="recordarme">
+                <label for="checkbox">Recordarme</label>
             <a href="index.html"><button type="submit">Ingresar</button></a>
         </form>
 
