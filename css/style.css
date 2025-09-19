@@ -1,10 +1,12 @@
 *{box-sizing:border-box;
 background-color:#daca75;}
     
+
+
 h2{
     background-color: rgb(244, 245, 233);
 }
-
+/*Aca empeizan cambios*/
 input {
 display: block;
 width: 100%;
@@ -40,7 +42,7 @@ button{
     text-decoration: none;
     background-color: white;
 }
-
+/*aca terminan cambios*/
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
