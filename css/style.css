@@ -1,5 +1,5 @@
 *{box-sizing:border-box;
-background-color: antiquewhite;}
+}
     
 h2{
     background-color: white;
@@ -53,6 +53,7 @@ a { text-decoration: none; }
 }
 
 .wrap {
+  background-color: rgb(250, 240, 226);
   width: 1140px;
   max-width: 95vw;
   margin: 0 auto;
@@ -173,6 +174,14 @@ header {
   border: 1px solid #ddd;
 }
 
+footer{
+  background-color: #1a2b4c;
+}
+
+footer div{
+  display: flex;
+  justify-content: space-around;
+}
 
 @media (max-width: 1024px) {
   .layout {
