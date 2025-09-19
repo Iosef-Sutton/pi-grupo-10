@@ -1,11 +1,8 @@
 *{box-sizing:border-box;
-background-color: antiquewhite;}
-
-
-/*ACA EMPIEZAN LOS CAMBIOS DE LOGIN*/
-
+background-color:#daca75;}
+    
 h2{
-    background-color: white;
+    background-color: rgb(244, 245, 233);
 }
 
 input {
@@ -44,9 +41,6 @@ button{
     background-color: white;
 }
 
-/* ACA TERMINAN LOS CAMBIOS DEL LOGIN /*/
-
-
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
@@ -67,9 +61,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1a2b4c;
+  background: white;
   padding: 10px 40px;
-  color: #1a2b4c;
+  color: white;
 }
 
 
@@ -144,7 +138,7 @@ header {
 }
 .btn-red {
   display: inline-block;
-  background: #ff4033;
+  background: #f5f566d2;
   color: #fff;
   padding: 6px 10px;
   font-weight: 700;
