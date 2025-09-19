@@ -1,8 +1,8 @@
 *{box-sizing:border-box;
-background-color: antiquewhite;}
+background-color:#daca75;}
     
 h2{
-    background-color: white;
+    background-color: rgb(244, 245, 233);
 }
 
 input {
@@ -61,9 +61,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1a2b4c;
+  background: white;
   padding: 10px 40px;
-  color: #1a2b4c;
+  color: white;
 }
 
 .login-registro { 
@@ -136,7 +136,7 @@ header {
 }
 .btn-red {
   display: inline-block;
-  background: #ff4033;
+  background: #f5f566b6;
   color: #fff;
   padding: 6px 10px;
   font-weight: 700;
