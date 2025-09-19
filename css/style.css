@@ -1,3 +1,46 @@
+*{box-sizing:border-box;
+background-color: antiquewhite;}
+    
+h2{
+    background-color: white;
+}
+
+input {
+display: block;
+width: 100%;
+margin-bottom: 10px;
+border-radius: 5px;
+padding: 10px;
+background-color: white;
+}
+
+button{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.registro {
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.registro a{
+    text-decoration: none;
+    background-color: white;
+}
+
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 img { max-width: 100%; display: block; }
@@ -14,12 +57,26 @@ a { text-decoration: none; }
   max-width: 95vw;
   margin: 0 auto;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a2b4c;
+  padding: 10px 40px;
+  color: #1a2b4c;
+}
+
+.login-registro { 
+  text-align: right;
+  color: black;
+
+}
 
 
-.bar {
-  background: #C0C0C0; 
-  color: #fff;
-
+.brand {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .bar .wrap {
