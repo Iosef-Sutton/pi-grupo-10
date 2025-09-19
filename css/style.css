@@ -1,8 +1,8 @@
 *{box-sizing:border-box;
-}
+background-color:#daca75;}
     
 h2{
-    background-color: white;
+    background-color: rgb(244, 245, 233);
 }
 
 input {
@@ -53,7 +53,6 @@ a { text-decoration: none; }
 }
 
 .wrap {
-  background-color: rgb(250, 240, 226);
   width: 1140px;
   max-width: 95vw;
   margin: 0 auto;
@@ -62,9 +61,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #1a2b4c;
+  background: white;
   padding: 10px 40px;
-  color: #1a2b4c;
+  color: white;
 }
 
 .login-registro { 
@@ -137,7 +136,7 @@ header {
 }
 .btn-red {
   display: inline-block;
-  background: #ff4033;
+  background: #f5f566d2;
   color: #fff;
   padding: 6px 10px;
   font-weight: 700;
@@ -174,14 +173,6 @@ header {
   border: 1px solid #ddd;
 }
 
-footer{
-  background-color: #1a2b4c;
-}
-
-footer div{
-  display: flex;
-  justify-content: space-around;
-}
 
 @media (max-width: 1024px) {
   .layout {
