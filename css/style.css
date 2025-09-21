@@ -45,6 +45,11 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .navbar{
   padding:8px 0 12px;
 }
+
+.navbar ul{
+  display: flex;
+}
+
 .navbar a{
   margin-right:14px;
   text-decoration:none;
