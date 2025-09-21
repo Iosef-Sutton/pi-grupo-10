@@ -68,8 +68,9 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .cats a{text-decoration:none;color:#333}
 .content{flex:1}
 
+.section-title{margin:0px 0 12px}
 
-.section-title{margin:0 0 12px}
+.section-title2{margin:40px 0 12px}
 
 
 .sto{
