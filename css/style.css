@@ -64,7 +64,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .sidebox{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:12px}
 .sidebox h3{margin:0 0 8px;font-size:1rem}
 .cats{list-style:none;margin:0;padding:0}
-.cats li{margin-bottom:8px}
+.cats li{padding:4px 0; border-bottom:1px solid #e0e0e0}
 .cats a{text-decoration:none;color:#333}
 .content{flex:1}
 
@@ -89,9 +89,10 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 }
 .sto article img{
   display:block;
-  width:100%;
+  width:98%;
   height: 217px;
-  background:#eee;              
+  background:#eee;      
+  border: 10px solid #fff;
   border-bottom:1px solid #e0e0e0;
 }
 .sto article h2{margin:12px 12px 6px;font-size:1rem}
