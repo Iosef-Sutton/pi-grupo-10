@@ -3,104 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Relojes Rolex</title>
-  <link rel="stylesheet" href="css/cami.css">
+  <title>Productos por categoría • Rolex</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
+  
+<header class="site-header">
     <div class="container">
-      <div class="topbar">
-        <a class="logo" href="index.html">
-          <img src="img/Logo.png" alt="Logo" width="36" height="36">
-        </a>
-        <form class="search" action="search-results.html">
-          <input type="search" placeholder="Buscar relojes…">
-          <button class="btn" type="submit">Buscar</button>
-        </form>
-      </div>
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Registro</a>
-      </nav>
+        <div class="topbar">
+       
+            <a class="logo" href="./index.html">
+            <img src="./img/logo_cropped.png" alt="Logo">
+            </a>
+
+
+            <form class="search" action="search-results.html">
+                <input type="search" placeholder="Buscar productos…">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Registro</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
+
   
-  <main class="container">
-    <img src="img/Rolex.png" alt="Logo Rolex" class="brand-logo">
-    <h1 class="section-title">Relojes Rolex</h1>
-
-    <div class="grid">
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj10.webp')"></div>
-          <div class="body">
-            <h3>Rolex Submariner</h3>
-            <p class="meta">Acero • 40 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
+  <main class="container page">
+    <aside class="sidebar">
+      <div class="sidebox">
+        <h3>Categorías</h3>
+        <ul class="cats">
+          <li><a href="./category.html">Rolex</a></li>
+          <li><a href="./category.html">Casio</a></li>
+          <li><a href="./category.html">Guess</a></li>
+          <li><a href="./category.html">Citizen</a></li>
+          <li><a href="./category.html">Bulova</a></li>
+        </ul>
       </div>
+    </aside>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj5.webp')"></div>
-          <div class="body">
-            <h3>Rolex Daytona</h3>
-            <p class="meta">Cronógrafo • 40 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
-      </div>
+    
+    <section class="content">
+      
+      <img src="./img/Rolexsinfondo.png" alt="Logo Rolex" class="brand-logo">
+      <h1 class="section-title">Relojes Rolex</h1>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj13.webp')"></div>
-          <div class="body">
-            <h3>Rolex Datejust</h3>
-            <p class="meta">Oystersteel • 36 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
-      </div>
+    
+      <section class="sto">
+        <article class="article1">
+          <img src="./img/Reloj10.webp" alt="Rolex Submariner">
+          <h2>Rolex Submariner</h2>
+          <p>Acero • 40 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj3.webp')"></div>
-          <div class="body">
-            <h3>Rolex GMT-Master II</h3>
-            <p class="meta">Bisel bicolor • 40 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
-      </div>
+        <article class="article2">
+          <img src="./img/Reloj5.webp" alt="Rolex Daytona">
+          <h2>Rolex Daytona</h2>
+          <p>Cronógrafo • 40 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj1.webp')"></div>
-          <div class="body">
-            <h3>Rolex Explorer</h3>
-            <p class="meta">Acero Oyster • 39 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
-      </div>
+        <article class="article1">
+          <img src="./img/Reloj13.webp" alt="Rolex Datejust">
+          <h2>Rolex Datejust</h2>
+          <p>Oystersteel • 36 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="thumb" style="background-image:url('img/Reloj2.webp')"></div>
-          <div class="body">
-            <h3>Rolex Yacht-Master</h3>
-            <p class="meta">Rolesium • 40 mm</p>
-            <a class="btn" href="product.html">Ver detalle</a>
-          </div>
-        </div>
-      </div>
+        <article class="article2">
+          <img src="./img/Reloj3.webp" alt="Rolex GMT-Master II">
+          <h2>Rolex GMT-Master II</h2>
+          <p>Bisel bicolor • 40 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
 
-    </div>
+        <article class="article1">
+          <img src="./img/Reloj1.webp" alt="Rolex Explorer">
+          <h2>Rolex Explorer</h2>
+          <p>Acero Oyster • 39 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
+
+        <article class="article2">
+          <img src="./img/Reloj2.webp" alt="Rolex Yacht-Master">
+          <h2>Rolex Yacht-Master</h2>
+          <p>Rolesium • 40 mm</p>
+          <div><a class="btn" href="./product.html">Ver detalle</a></div>
+        </article>
+      </section>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      2025 Catálogo de Relojes — Equipo: Camila Herrera Posse • Isabella Caronni • Iosef Sutton
+    </div>
+  </footer>
 
 </body>
 </html>
