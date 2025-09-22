@@ -57,7 +57,6 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   text-decoration:none;
   color:#fff;                   
 }
-.navbar a:hover{ text-decoration:underline; }
 
 
 .page{display:flex;margin:24px 0}
