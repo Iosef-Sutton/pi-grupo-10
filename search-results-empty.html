@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultados de búsqueda • Guess</title>
+  <link rel="stylesheet" href="./css/cami.css">
+</head>
+<body>
+
+  <!-- Header igual al de todo el sitio -->
+  <header class="site-header">
+    <div class="container">
+      <div class="topbar">
+        <a class="logo" href="./index.html">
+          <img src="./img/logocambios_cropped.png" alt="Logo">
+        </a>
+        <!-- Este form siempre puede ir a search-results.html;
+             como no hay JS, usamos esta página solo para “simular” sin resultados -->
+        <form class="search" action="search-results-empty.html">
+          <input type="search" name="q" placeholder="Buscar productos…">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+
+      <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./login.html">Login</a>
+        <a href="./register.html">Registro</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Layout: sidebar + contenido -->
+  <main class="container page">
+
+    <!-- Categorías (navegación vertical) -->
+    <aside class="sidebar">
+      <div class="sidebox">
+        <h3>Categorías</h3>
+        <ul class="cats">
+          <li><a href="./category.html">Rolex</a></li>
+          <li><a href="./category.html">Casio</a></li>
+          <li><a href="./category.html">Guess</a></li>
+          <li><a href="./category.html">Citizen</a></li>
+          <li><a href="./category.html">Bulova</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Contenido -->
+    <section class="content">
+      <h1 class="section-title">Resultados para: Guess</h1>
+
+      <!-- Cartel/leyenda “sin resultados” -->
+      <div class="alert">
+        <p><strong>No encontramos productos para “Guess”.</strong></p>
+        <p class="muted">
+          Probá buscar otra cosa, o mirá una categoría:
+          <a href="./category.html">ver categorías</a> |
+          <a href="./search-results.html">ver Rolex</a>
+        </p>
+      </div>
+
+      <!-- Si alguna vez querés mostrar resultados, debajo iría tu grilla .sto con <article>...
+           Pero en esta página NO se muestran, justamente para simular “sin coincidencias”. -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      2025 Catálogo de Relojes — Equipo: Camila Herrera Posse • Isabella Caronni • Iosef Sutton
+    </div>
+  </footer>
+</body>
+</html>
+
+
