@@ -1,80 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/isastyle.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/isastyle.css">
 </head>
 <body class="register">
 
-<header class="site-header">
+  
+  <header class="site-header">
     <div class="container">
-        <div class="topbar">
-       
-            <a class="logo" href="./index.html">
-            <img src="./img/logocambios_cropped.png" alt="Logo">
-            </a>
+      <div class="topbar">
+        <a class="logo" href="./index.html">
+          <img src="./img/logocambios_cropped.png" alt="Logo">
+        </a>
+        <form class="search" action="search-results.html">
+          <input type="search" name="q" placeholder="Buscar productos…">
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
 
-
-            <form class="search" action="search-results.html">
-                <input type="search" name="Rolex" placeholder="Buscar productos…">
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Registro</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html">Registro</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="register-container">
+  
+  <main class="container page">
+    
+    <aside class="sidebar">
+      <div class="sidebox">
+        <h3>Categorías</h3>
+        <ul class="cats">
+          <li><a href="category.html">Rolex</a></li>
+          <li><a href="category.html">Casio</a></li>
+          <li><a href="category.html">Guess</a></li>
+          <li><a href="category.html">Citizen</a></li>
+          <li><a href="category.html">Bulova</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    
+    <section class="content">
+      <div class="register-container">
         <h2>REGISTRATE</h2>
+
         <form action="login.html" method="get">
-            <div>
-                <label class="label" for="name">Nombre</label>
-                <div><input class="input" type="text" name="name" id="name" placeholder="Ingrese su nombre" value=""></div>
-            </div>
+          <div>
+            <label class="label" for="name">Nombre</label>
+            <div><input class="input" type="text" id="name" name="name" placeholder="Ingrese su nombre"></div>
+          </div>
 
-            <div>
-                <label class="label" for="email">Email</label>
-                <div><input class= "input" type="email" name="email" id="email" placeholder="Ingrese su email" value=""></div>
-            </div>
+          <div>
+            <label class="label" for="email">Email</label>
+            <div><input class="input" type="email" id="email" name="email" placeholder="Ingrese su email"></div>
+          </div>
 
-            <div>
-                <label class="label" for="password">Contraseña</label>
-                <div><input class= "input" type="password" name="password" id="password" placeholder="Ingresar contraseña" value=""></div>
-            </div>
+          <div>
+            <label class="label" for="password">Contraseña</label>
+            <div><input class="input" type="password" id="password" name="password" placeholder="Ingresar contraseña"></div>
+          </div>
 
-            <div>
-                <label class="label" for="password">Repetir contraseña</label>
-                <div><input class= "input" type="password" name="password" id="password" placeholder="Repetir contraseña" value=""></div>
-            </div>
+          <div>
+            <label class="label" for="password2">Repetir contraseña</label>
+            <div><input class="input" type="password" id="password2" name="password2" placeholder="Repetir contraseña"></div>
+          </div>
 
-            <div class="terminos">
-                <input type="checkbox" name="terminos">
-                <label for="terminos">Acepto los terminos y condiciones</label>
-            </div>
+          <div class="terminos">
+            <input type="checkbox" id="terminos" name="terminos">
+            <label for="terminos">Acepto los términos y condiciones</label>
+          </div>
 
-            <div class="button-container">
-                <button type="submit">Registrarme</button>
-            </div>
+          <div class="button-container">
+            <button type="submit">Registrarme</button>
+          </div>
         </form>
 
         <div class="login-link">
-            <a href="./login.html">Ya tengo una cuenta</a>
+          <a href="./login.html">Ya tengo una cuenta</a>
         </div>
+      </div>
     </section>
   </main>
-  
+
   <footer class="site-footer">
     <div class="container">
       2025 Catálogo de Relojes — Equipo: Camila Herrera Posse • Isabella Caronni • Iosef Sutton

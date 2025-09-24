@@ -8,8 +8,6 @@
     padding: 30px;
     border-radius: 10px;
     width: 300px;
-    margin-top: 5%;
-    margin-bottom: 95%;
     justify-self: center;
 }
 
@@ -63,8 +61,6 @@ h2{
     padding: 30px 30px;
     border-radius: 10px;
     width: 300px;
-    margin-top: 5%;
-    margin-bottom: 95%;
     justify-self: center;
 }
 
@@ -116,5 +112,8 @@ h2{
   text-align: left;   
   margin-top: 20px;
 }
+
+.page{ display:flex; margin:24px 0; }
+.content{ flex:1; display:flex; justify-content:center; align-items:flex-start; padding:24px 0; }
 
 
