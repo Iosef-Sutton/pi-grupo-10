@@ -2,7 +2,7 @@
 body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .container{width:1200px;width:95%;margin:0 auto}
 
-
+/*Header*/
 .site-header{
   background:#0b2a55;           
 }
@@ -13,7 +13,8 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   padding:16px 0 0;
 }
 
-.logo{display:flex;
+.logo{
+  display:flex;
   align-items:center}
 
 .logo img{
@@ -58,6 +59,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   color:#fff;                   
 }
 
+/*   */
 .page{
   display:flex;
   margin:24px 0}
@@ -100,6 +102,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   flex-wrap:wrap;
   margin:0 -10px;               
 }
+
 .sto article{
   width:25%;                    
   padding:0 10px;               
@@ -110,6 +113,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   border-radius:12px;
   overflow:hidden;
 }
+
 .sto article img{
   display:block;
   width:98%;
@@ -118,8 +122,15 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   border: 10px solid #fff;
   border-bottom:1px solid #e0e0e0;
 }
-.sto article h2{margin:12px 12px 6px;font-size:18px}
-.sto article p{margin:0 12px 12px;color:#555;font-size:.95rem}
+
+.sto article h2{
+  margin:12px 12px 6px;
+  font-size:18px}
+
+.sto article p{
+  margin:0 12px 12px;
+  color:#555;
+  font-size:.95rem}
 
 .btn{
   display:inline-block;
@@ -131,10 +142,11 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   border-radius:6px;
 }
 
+/*Footer*/
 .site-footer{background:#fff;border-top:1px solid #e0e0e0;margin-top:24px}
 .site-footer .container{padding:14px 0;text-align:center;font-size:.95rem}
 
-
+/*Responsive*/
 @media (max-width:1100px){ .sto article{width:33.333%;} }  
 @media (max-width:900px){
   .page{flex-direction:column}
