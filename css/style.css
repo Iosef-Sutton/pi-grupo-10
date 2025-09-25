@@ -1,39 +1,31 @@
 
 body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
-.container{width:1200px;width:95%;margin:0 auto}
 
 /*Header*/
 .site-header{
-  background:#0b2a55;           
-}
-
-.topbar{
-  display:flex;
-  align-items:center;
-  padding:16px 0 0;
+  background:#0b2a55;  
+  padding: 0px 20px;
+  height: 150px;   
+  display: flex; 
+  justify-content: space-between;     
 }
 
 .logo{
-  display:flex;
-  align-items:center}
-
-.logo img{
-  display:block;
   height:100px;                  
-  width:auto;
-  margin-left: 33px;
+  margin: 20px 0px 0px 33px;
 }
 
 .search{
-  margin-left:auto;
-  display:flex;
+  display: flex;
+  align-items: center;
 }
 
 .search input{
   padding:8px;
+  margin-right: 5px;
   border:1px solid #ccc;
-  background:#fff;
-  color:#222;
+  border-radius: 3px;
+  width: 400px;
 }
 
 .search button{
@@ -41,11 +33,12 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   background:#fff;              
   color:#0b2a55;
   border:1px solid #fff;
-  cursor:pointer;
+  border-radius: 3px;
 }
 
 .navbar{
-  padding:8px 0 12px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar ul{
@@ -62,7 +55,8 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 /*   */
 .page{
   display:flex;
-  margin:24px 0}
+  margin:24px 20px 24px 0px
+}
 
 .sidebar{
   width:220px;
@@ -104,8 +98,9 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 }
 
 .sto article{
-  width:25%;                    
-  padding:0 10px;               
+  width:24.8%;                    
+  padding:0 10px;
+  margin: 0px 0.1% 0px 0.1%;               
   box-sizing:border-box;
   margin-bottom:20px;           
   background:#fff;
@@ -145,6 +140,11 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 /*Footer*/
 .site-footer{background:#fff;border-top:1px solid #e0e0e0;margin-top:24px}
 .site-footer .container{padding:14px 0;text-align:center;font-size:.95rem}
+
+/*Resultado de busqueda, oculto*/
+.section-title-hidden{
+  display: none;
+}
 
 /*Responsive*/
 @media (max-width:1100px){ .sto article{width:33.333%;} }  
