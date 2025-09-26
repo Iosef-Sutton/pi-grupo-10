@@ -162,9 +162,11 @@ body{
 .tres_rayitas{
     display: none;
 }
+
+
 /*Login*/
 
-.login {background-color: #fff;}
+.login {background-color:#f9f3e2;}
 
 .login-container {
     background-color: white;
@@ -211,7 +213,7 @@ body{
 
 /*Registro*/
 
-.register {background-color: #fff;}
+.register {background-color:#f9f3e2;}
 
 h2{
     text-align: center;
