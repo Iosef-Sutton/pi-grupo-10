@@ -3,10 +3,11 @@ body{
   background:#f9f3e2;
   margin:0;
   font-family:Arial, sans-serif;
-  color:#222}
+  color:#222;
+}
 
 /*Header*/
-.site-header{   
+header{   
   background:#0b2a55;  
   padding: 0px 20px;
   height: 150px;   
@@ -53,14 +54,15 @@ body{
   text-decoration:none;
   color:#fff;                   
 }
+/*Aca termina el header*/
 
-/*Navegador vertical*/
+/*Main*/
 .page{
   display:flex;
-  margin:24px 20px 24px 0px
+  margin:24px 20px 24px 0px;
 }  
 
-.sidebar {
+.sidebar{
   width: 220px;
   height: 700px;
   margin: 10px 24px 0 15px; 
@@ -75,26 +77,32 @@ body{
 
 .cats{
   list-style:none;
-  padding:0}
+  padding:0;
+}
 
 .cats li{
   padding:4px; 
-  border-bottom:1px solid #e0e0e0} 
+  border-bottom:1px solid #e0e0e0;
+} 
 
 .cats a{
   text-decoration:none;
-  color:black}
+  color:black;
+}
 
-/*Index*/
+/*Aca termina la sidebar*/
 
-.content{flex:1} 
+/*Index, Section*/
+.content{
+  flex:1;
+} 
 
 .section-title{
   margin-top: 0px;
   text-align: left;
 }
 
-/*Resultado de busqueda, oculto*/
+/*Resultado de busqueda, oculto, para cuando busca algo no relacionado en la barra buscadora*/
 .section-title-hidden{
   display: none;
 }
@@ -116,11 +124,10 @@ body{
 }
 
 .sto .article1{
-  height: 450px;
+  height: 500px;
 }
 
 .sto article img{
-  display:block;
   width:95%;
   height: 50%;
   background:white;      
@@ -137,7 +144,7 @@ body{
   color:dimgray;
   }
 
-.btn {
+.sto a{
   display: inline-block;
   margin: 10px 12px 14px;
   padding: 8px 12px;
@@ -146,35 +153,28 @@ body{
   text-decoration: none;
   border-radius: 6px;
 }
+/*Hasta aca*/
 
 /*Footer*/
-.site-footer{
+footer{
   background:white;
   border-top:1px solid #e0e0e0;
 }
 
-.site-footer .container{
+footer .container{
   padding:10px;
   text-align:center;
-  font-size: 15px}
-
-.tres_rayitas{
-    display: none;
+  font-size: 15px
 }
-
+/*Hasta aca el Footer*/
 
 /*Login*/
-
-.login {
-  background-color:#f9f3e2;
-}
-
-.container1{
+.login main{
   margin: 30px 0px 30px 0px;
   height: 80vh;
 }
 
-.login-container {
+.login-container{
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -182,15 +182,13 @@ body{
     justify-self: center;
 }
 
-.login .label {
-    display:block;
+.login .label{
     text-align: left;
     margin-top: 10px;
     font-weight: bold;
 }
 
-.login .input {
-    display: block;
+.login .input{
     width: 90%;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -207,25 +205,27 @@ body{
     text-align: center;
 }
 
-.login .register-link {
+.login .register-link{
     margin-top: 15px;
     text-align: center;
 }
 
 .login .register-link a{
-    text-decoration: none;
     color: black;
 }
+/*Hasta aca el login*/
 
 /*Registro*/
-
-.register {background-color:#f9f3e2;}
-
 h2{
     text-align: center;
 }
 
-.register-container {
+.register main{
+  margin: 30px 0px 30px 0px;
+  height: 80vh;
+}
+
+.register-container{
     background-color: white;
     padding: 30px 30px;
     border-radius: 10px;
@@ -233,15 +233,13 @@ h2{
     justify-self: center;
 }
 
-.register .label {
-    display:block;
+.register .label{
     text-align: left;
     margin-top: 10px;
     font-weight: bold;
 }
 
 .register .input {
-    display: block;
     width: 90%;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -259,11 +257,11 @@ h2{
 }
 
 .register .login-link a{
-    text-decoration: none;
     color: black;
 }
+/*Hasta aca el Registro*/
 
-/*product*/ /*falta terminar*/
+/*product*/
 .product-photo img{
   height: 500px;
 }
