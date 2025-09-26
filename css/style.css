@@ -146,6 +146,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   display: none;
 }
 
+
 /*Responsive*/
 @media (max-width:1100px){ .sto article{width:33.333%;} }  
 @media (max-width:900px){
