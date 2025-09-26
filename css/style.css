@@ -40,7 +40,7 @@ body{
 
 .navbar{
   display: flex;
-  align-items: center;    /*PORQUE CENTER*/
+  align-items: center;
 }
 
 .navbar ul{
@@ -139,7 +139,9 @@ body{
   color:#fff;
   text-decoration:none;
   border-radius:6px;
-   /*como poner el cuadrado abajo*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /*Footer*/
