@@ -63,16 +63,17 @@ body{
   /*UNIR SIDEBAR Y SIDEBOX*/
   
 
-.sidebox{
-  background:#fff;
-  border-radius:10px;
-  padding:12px;
-  width:220px;
-  margin-right:24px;
-  margin-left: 15px}
+.sidebar {
+  width: 220px;
+  height: 700px;
+  margin: 0 24px 0 15px; 
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+}
 
 
-.sidebox h3{
+.sidebar h3{
   margin-top: 8px;
 }
 
@@ -94,6 +95,7 @@ body{
 
 .section-title{
   margin-top: 0px;
+  text-align: left;
 }
 
   /*Resultado de busqueda, oculto*/
@@ -115,6 +117,10 @@ body{
   background:#fff;
   border:1px solid #e0e0e0; 
   border-radius:12px;
+}
+
+.sto .article1{
+  height: 450px;
 }
 
 .sto article img{
