@@ -58,20 +58,16 @@ body{
 .page{
   display:flex;
   margin:24px 20px 24px 0px
-}
-
-  /*UNIR SIDEBAR Y SIDEBOX*/
-  
+}  
 
 .sidebar {
   width: 220px;
   height: 700px;
-  margin: 0 24px 0 15px; 
+  margin: 10px 24px 0 15px; 
   background: #fff;
   border-radius: 10px;
   padding: 12px;
 }
-
 
 .sidebar h3{
   margin-top: 8px;
