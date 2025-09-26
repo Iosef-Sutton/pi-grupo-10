@@ -322,7 +322,10 @@ h2{
     .product-photo img{
       width: 350px;
       height: 350px;
-      margin-left: 13px;
+    }
+
+    .content{
+      padding-left: 10px;
     }
 
     .login-container{
