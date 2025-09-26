@@ -163,7 +163,7 @@ body{
 }
 /*Login*/
 
-.login {background-color: antiquewhite;}
+.login {background-color: #fff;}
 
 .login-container {
     background-color: white;
@@ -210,7 +210,7 @@ body{
 
 /*Registro*/
 
-.register {background-color: antiquewhite;}
+.register {background-color: #fff;}
 
 h2{
     text-align: center;
