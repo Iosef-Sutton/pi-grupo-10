@@ -44,7 +44,7 @@ body{
 }
 
 .navbar ul{
-  display: flex; /*HACE FALTA?*/
+  display: flex; 
   list-style: none;
 }
 
@@ -60,16 +60,17 @@ body{
   margin:24px 20px 24px 0px
 }
 
-.sidebar{     /*UNIR SIDEBAR Y SIDEBOX*/
-  width:220px;
-  margin-right:24px;
-  margin-left: 15px}
+  /*UNIR SIDEBAR Y SIDEBOX*/
+  
 
 .sidebox{
   background:#fff;
   border-radius:10px;
-  padding:12px
-  }
+  padding:12px;
+  width:220px;
+  margin-right:24px;
+  margin-left: 15px}
+
 
 .sidebox h3{
   margin-top: 8px;
@@ -81,7 +82,7 @@ body{
 
 .cats li{
   padding:4px; 
-  border-bottom:1px solid #e0e0e0} /*no entiendo*/
+  border-bottom:1px solid #e0e0e0} 
 
 .cats a{
   text-decoration:none;
@@ -89,7 +90,7 @@ body{
 
 /*Index*/
 
-.content{flex:1} /*no entiendo*/
+.content{flex:1} 
 
 .section-title{
   margin-top: 0px;
@@ -112,7 +113,7 @@ body{
   margin-right: 3px;               
   margin-bottom:20px;           
   background:#fff;
-  border:1px solid #e0e0e0; /*no entiendo*/
+  border:1px solid #e0e0e0; 
   border-radius:12px;
 }
 
@@ -121,7 +122,7 @@ body{
   width:95%;
   height: 50%;
   background:white;      
-  border: 10px solid #fff; /*no entiendo*/
+  border: 10px solid #fff; 
   border-bottom:1px solid #e0e0e0;
 }
 
@@ -236,7 +237,7 @@ h2{
     width: 90%;
     margin-bottom: 10px;
     border-radius: 5px;
-    padding: 10px; /*podemos sacar?*/
+    padding: 10px; 
 }
 
 .register .button-container{
