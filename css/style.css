@@ -116,7 +116,7 @@ body{
 }
 
 .sto .article1{
-  height: 450px;
+  height: 500px;
 }
 
 .sto article img{
@@ -170,8 +170,9 @@ body{
 
 .login {background-color:#f9f3e2;}
 
-.login-container {
+.login-container{
     background-color: white;
+    margin-top: 30px;
     padding: 30px;
     border-radius: 10px;
     width: 300px;
