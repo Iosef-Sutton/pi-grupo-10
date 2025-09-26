@@ -1,4 +1,6 @@
-
+.tres_rayitas{
+    display: none;
+}
 /*Login*/
 
 .login {background-color: antiquewhite;}
@@ -46,8 +48,6 @@
     color: black;
 }
 
-
-
 /*Registro*/
 
 .register {background-color: antiquewhite;}
@@ -94,26 +94,50 @@ h2{
     color: black;
 }
 
-@media (max-width: 420px){}
 
-/*Product*/
+@media (max-width: 380px){
+    .search{
+        display: none;
+    }
 
-.product-photo img {
-  width: 450px;  
-  height: auto;    
-  display: block;}
+    .tres_rayitas{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin: 50px 27px 0px 0px;
+    }
 
+    .navbar{
+        display: none;
+    }
 
-.product-data .btn{
-    margin-top: 10px;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px 0px 0px 9px;
+        margin-top: 15px;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 30px;
+    }
+
+    .sto{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sto article{
+        width: 85%;
+        margin-left: 22px;
+    }
+
+    footer{
+        width: 100%;
+    }
 }
-
-.reviews h2 {
-  text-align: left;   
-  margin-top: 20px;
-}
-
-.page{ display:flex; margin:24px 0; }
-.content{ flex:1; display:flex; justify-content:center; align-items:flex-start; padding:24px 0; }
-
-
