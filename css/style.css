@@ -1,8 +1,12 @@
 
-body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
+body{
+  background:#f9f3e2;
+  margin:0;
+  font-family:Arial, sans-serif;
+  color:#222}
 
 /*Header*/
-.site-header{
+.site-header{   
   background:#0b2a55;  
   padding: 0px 20px;
   height: 150px;   
@@ -12,7 +16,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 
 .logo{
   height:100px;                  
-  margin: 20px 0px 0px 33px;
+  margin: 20px;
 }
 
 .search{
@@ -23,7 +27,6 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .search input{
   padding:8px;
   margin-right: 5px;
-  border:1px solid #ccc;
   border-radius: 3px;
   width: 400px;
 }
@@ -32,22 +35,21 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   padding:8px 12px;
   background:#fff;              
   color:#0b2a55;
-  border:1px solid #fff;
   border-radius: 3px;
 }
 
 .navbar{
   display: flex;
-  align-items: center;
+  align-items: center;    /*PORQUE CENTER*/
 }
 
 .navbar ul{
-  display: flex;
+  display: flex; /*HACE FALTA?*/
   list-style: none;
 }
 
 .navbar a{
-  margin-right:14px;
+  margin-right:15px;
   text-decoration:none;
   color:#fff;                   
 }
@@ -58,7 +60,7 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   margin:24px 20px 24px 0px
 }
 
-.sidebar{
+.sidebar{     /*UNIR SIDEBAR Y SIDEBOX*/
   width:220px;
   margin-right:24px;
   margin-left: 15px}
@@ -66,28 +68,28 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
 .sidebox{
   background:#fff;
   border-radius:10px;
-  padding:12px}
+  padding:12px
+  }
 
 .sidebox h3{
-  margin:0 0 8px;
-  font-size:1rem}
+  margin-top: 8px;
+}
 
 .cats{
   list-style:none;
-  margin:0;
   padding:0}
 
 .cats li{
-  padding:4px 0; 
-  border-bottom:1px solid #e0e0e0}
+  padding:4px; 
+  border-bottom:1px solid #e0e0e0} /*no entiendo*/
 
 .cats a{
   text-decoration:none;
-  color:#333}
-
-.content{flex:1}
+  color:black}
 
 /*Index*/
+
+.content{flex:1} /*no entiendo*/
 
 .section-title{margin:0px 0 12px}
 
@@ -148,12 +150,3 @@ body{background:#f9f3e2;margin:0;font-family:Arial, sans-serif;color:#222}
   display: none;
 }
 
-
-/*Responsive*/
-@media (max-width:1100px){ .sto article{width:33.333%;} }  
-@media (max-width:900px){
-  .page{flex-direction:column}
-  .sidebar{width:auto;margin-right:0;margin-bottom:16px}
-  .sto article{width:50%;}                                   
-}
-@media (max-width:600px){ .sto article{width:100%;} }        
