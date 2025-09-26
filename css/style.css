@@ -116,7 +116,7 @@ body{
 }
 
 .sto .article1{
-  height: 500px;
+  height: 450px;
 }
 
 .sto article img{
@@ -137,17 +137,14 @@ body{
   color:dimgray;
   }
 
-.btn{
-  display:inline-block;
-  margin:0 12px 14px;
-  padding:8px 12px;
-  background:#0b2a55;
-  color:#fff;
-  text-decoration:none;
-  border-radius:6px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.btn {
+  display: inline-block;   /* en vez de flex */
+  margin: 0 12px 14px;
+  padding: 8px 12px;
+  background: #0b2a55;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 /*Footer*/
@@ -170,9 +167,8 @@ body{
 
 .login {background-color:#f9f3e2;}
 
-.login-container{
+.login-container {
     background-color: white;
-    margin-top: 30px;
     padding: 30px;
     border-radius: 10px;
     width: 300px;
