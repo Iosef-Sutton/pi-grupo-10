@@ -92,10 +92,13 @@ body{
 .content{flex:1} /*no entiendo*/
 
 .section-title{
-  margin-top: 0px;}
+  margin-top: 0px;
+}
 
-.section-title2{
-  margin-top:40px}
+  /*Resultado de busqueda, oculto*/
+.section-title-hidden{
+  display: none;
+}
 
 .sto{
   display:flex;
@@ -155,7 +158,146 @@ body{
   text-align:center;
   font-size: 15px}
 
-/*Resultado de busqueda, oculto*/
-.section-title-hidden{
-  display: none;
+.tres_rayitas{
+    display: none;
+}
+/*Login*/
+
+.login {background-color: antiquewhite;}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    justify-self: center;
+}
+
+.login .label {
+    display:block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login .input {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login .checkbox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.login .register-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login .register-link a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Registro*/
+
+.register {background-color: antiquewhite;}
+
+h2{
+    text-align: center;
+}
+
+.register-container {
+    background-color: white;
+    padding: 30px 30px;
+    border-radius: 10px;
+    width: 300px;
+    justify-self: center;
+}
+
+.register .label {
+    display:block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.register .input {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px; /*podemos sacar?*/
+}
+
+.register .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register .login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register .login-link a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (max-width: 380px){
+    .search{
+        display: none;
+    }
+
+    .tres_rayitas{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        margin: 50px 27px 0px 0px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 15px 0px 0px 9px;
+        margin-top: 15px;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 30px;
+    }
+
+    .sto{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .sto article{
+        width: 85%;
+        margin-left: 22px;
+    }
+
+    footer{
+        width: 100%;
+    }
 }
