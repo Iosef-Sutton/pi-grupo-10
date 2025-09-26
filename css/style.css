@@ -165,7 +165,14 @@ body{
 
 /*Login*/
 
-.login {background-color:#f9f3e2;}
+.login {
+  background-color:#f9f3e2;
+}
+
+.container1{
+  margin: 30px 0px 30px 0px;
+  height: 80vh;
+}
 
 .login-container {
     background-color: white;
