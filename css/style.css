@@ -91,45 +91,45 @@ body{
 
 .content{flex:1} /*no entiendo*/
 
-.section-title{margin:0px 0 12px}
+.section-title{
+  margin-top: 0px;}
 
-.section-title2{margin:40px 0 12px}
+.section-title2{
+  margin-top:40px}
 
 .sto{
   display:flex;
   flex-wrap:wrap;
-  margin:0 -10px;               
 }
 
 .sto article{
-  width:24.8%;                    
-  padding:0 10px;
-  margin: 0px 0.1% 0px 0.1%;               
   box-sizing:border-box;
+  width:24%;                    
+  padding:10px;
+  margin-right: 3px;               
   margin-bottom:20px;           
   background:#fff;
-  border:1px solid #e0e0e0;
+  border:1px solid #e0e0e0; /*no entiendo*/
   border-radius:12px;
-  overflow:hidden;
 }
 
 .sto article img{
   display:block;
-  width:98%;
-  height: 217px;
-  background:#eee;      
-  border: 10px solid #fff;
+  width:95%;
+  height: 50%;
+  background:white;      
+  border: 10px solid #fff; /*no entiendo*/
   border-bottom:1px solid #e0e0e0;
 }
 
 .sto article h2{
   margin:12px 12px 6px;
-  font-size:18px}
+  font-size:18px} 
 
 .sto article p{
   margin:0 12px 12px;
-  color:#555;
-  font-size:.95rem}
+  color:dimgray;
+  }
 
 .btn{
   display:inline-block;
@@ -139,14 +139,21 @@ body{
   color:#fff;
   text-decoration:none;
   border-radius:6px;
+   /*como poner el cuadrado abajo*/
 }
 
 /*Footer*/
-.site-footer{background:#fff;border-top:1px solid #e0e0e0;margin-top:24px}
-.site-footer .container{padding:14px 0;text-align:center;font-size:.95rem}
+.site-footer{
+  background:white;
+  border-top:1px solid #e0e0e0;
+}
+
+.site-footer .container{
+  padding:10px;
+  text-align:center;
+  font-size: 15px}
 
 /*Resultado de busqueda, oculto*/
 .section-title-hidden{
   display: none;
 }
-
