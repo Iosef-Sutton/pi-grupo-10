@@ -114,17 +114,15 @@ header{
 
 .Category1 article{
   box-sizing:border-box;
-  width:24%;                    
+  width:32%; 
+  height: 580px;                   
   padding:10px;
-  margin-right: 3px;               
+  margin-right: 0.65%;  
+  margin-left: 0.65%;                            
   margin-bottom:20px;           
   background:#fff;
   border:1px solid #e0e0e0; 
   border-radius:12px;
-}
-
-.Category1 .article1{
-  height: 500px;
 }
 
 .Category1 article img{
@@ -162,16 +160,14 @@ header{
 .Category2 article{
   box-sizing:border-box;
   width:24%;                    
+  height: 580px;                   
   padding:10px;
-  margin-right: 3px;               
+  margin-right: 0.65%;  
+  margin-left: 0.65%;               
   margin-bottom:20px;           
   background:#fff;
   border:1px solid #e0e0e0; 
   border-radius:12px;
-}
-
-.Category2 .article1{
-  height: 500px;
 }
 
 .Category2 article img{

@@ -10,13 +10,13 @@ fetch('https://dummyjson.com/products/category/mens-watches')
     .then(function(data) {
         console.log(data.products);
         for( let i=0; i<6; i++){
-            let numero = data.products[i]
-            console.log(numero)
+            let producto = data.products[i]
+            console.log(producto)
             products += `<article>
-                            <img src="" alt="Producto ${1}">
-                            <h2>${numero.title}</h2>
-                            <p>${numero.description}</p>
-                            <p>$ ${numero.price}</p>
+                            <img src="${producto.images[0]}" alt="Producto ${1}">
+                            <h2>${producto.title}</h2>
+                            <p>${producto.description}</p>
+                            <p>$ ${producto.price}</p>
                             <div><a href="./product.html">Ver detalle</a></div>
                         </article>`
         }
@@ -28,13 +28,26 @@ fetch('https://dummyjson.com/products/category/mens-watches')
     //Aca termina la primera seccion
     //Aca empieza la segunda seccion
 const category2 = document.querySelector('.Category2')
+let products2 = "";
 
 fetch('https://dummyjson.com/products/category/womens-watches')
     .then(function(response){
         return response.json()
     })
     .then(function(data) {
-        console.log();
+        console.log(data.products2);
+        for( let i=0; i<6; i++){
+            let producto2 = data.products2[i]
+            console.log(producto2)
+            products2 += `<article>
+                            <img src="${producto2.images[0]}" alt="Producto ${1}">
+                            <h2>${producto2.title}</h2>
+                            <p>${producto2.description}</p>
+                            <p>$ ${producto2.price}</p>
+                            <div><a href="./product.html">Ver detalle</a></div>
+                        </article>`
+        }
+        category1.innerHTML = products2;
     })
     .catch(function(error) {
         console.log("Error: " + error);
