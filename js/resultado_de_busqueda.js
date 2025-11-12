@@ -1,11 +1,11 @@
-//Aca empieza el filtro de la barra buscadora
-const qs = location.search;
-const qso = new URLSearchParams(qs);
-const buscador = qso.get('Buscador');
+fetch('')
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data) {
+        console.log(data);
+    })
+    .catch(function(error) {
+        console.log("Error: " + error);
+    })
 
-if(buscador == ""){
-    alert("Ingresa alguna palabra")
-} else if(buscador.length < 3){
-    alert("Igresa por lo menos 3 caracteres")
-}
-//Aca termina

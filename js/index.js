@@ -49,7 +49,7 @@ fetch('https://dummyjson.com/products/category/womens-watches')
         }
         category2.innerHTML = products2;
     })
-    .catch(function(error) {
+    .catch(function(error){
         console.log("Error: " + error);
     })
     //Aca termina la segunda seccion
