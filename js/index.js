@@ -35,9 +35,9 @@ fetch('https://dummyjson.com/products/category/womens-watches')
         return response.json()
     })
     .then(function(data) {
-        console.log(data.products2);
-        for( let i=0; i<6; i++){
-            let producto2 = data.products2[i]
+        console.log(data.products);
+        for( let i=0; i<5; i++){
+            let producto2 = data.products[i]
             console.log(producto2)
             products2 += `<article>
                             <img src="${producto2.images[0]}" alt="Producto ${1}">
@@ -47,7 +47,7 @@ fetch('https://dummyjson.com/products/category/womens-watches')
                             <div><a href="./product.html">Ver detalle</a></div>
                         </article>`
         }
-        category1.innerHTML = products2;
+        category2.innerHTML = products2;
     })
     .catch(function(error) {
         console.log("Error: " + error);

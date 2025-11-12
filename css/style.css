@@ -114,7 +114,7 @@ header{
 
 .Category1 article{
   box-sizing:border-box;
-  width:32%; 
+  width: 32%; 
   height: 580px;                   
   padding:10px;
   margin-right: 0.65%;  
@@ -159,7 +159,7 @@ header{
 
 .Category2 article{
   box-sizing:border-box;
-  width:24%;                    
+  width: 32%;
   height: 580px;                   
   padding:10px;
   margin-right: 0.65%;  
