@@ -44,7 +44,7 @@ fetch('https://dummyjson.com/products/category/womens-watches')
                             <h2>${producto2.title}</h2>
                             <p>${producto2.description}</p>
                             <p>$ ${producto2.price}</p>
-                            <div><a href="./product.html">Ver detalle</a></div>
+                            <div><a href="./product.html?id=${producto2.id}">Ver detalle</a></div>
                         </article>`
         }
         category2.innerHTML = products2;
