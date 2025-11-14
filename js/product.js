@@ -1,3 +1,19 @@
+//Aca empieza el filtro de la barra buscadora
+const form = document.querySelector(".search")
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+    const buscador = this.buscador.value.length
+    if(buscador == ""){
+        alert("Ingresa alguna palabra")
+    } else if(buscador < 3){
+        alert("Igresa por lo menos 3 caracteres")
+    } else{
+    form.submit()
+    }
+})
+//Aca termina
+
+//Aca empiezan los detalles del producto
 fetch('https://dummyjson.com/products/1')
     .then(function(response){
         return response.json();

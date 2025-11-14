@@ -56,13 +56,16 @@ fetch('https://dummyjson.com/products/category/womens-watches')
 //Aca termina la home
 
 //Aca empieza el filtro de la barra buscadora
-const qs = location.search;
-const qso = new URLSearchParams(qs);
-const buscador = qso.get('Buscador');
-
-if(buscador == ""){
-    alert("Ingresa alguna palabra")
-} else if(buscador.length < 3){
-    alert("Igresa por lo menos 3 caracteres")
-}
+const form = document.querySelector(".search")
+form.addEventListener('submit', function(e){
+    e.preventDefault()
+    const buscador = this.buscador.value.length
+    if(buscador == ""){
+        alert("Ingresa alguna palabra")
+    } else if(buscador < 3){
+        alert("Igresa por lo menos 3 caracteres")
+    } else{
+    form.submit()
+    }
+})
 //Aca termina
