@@ -14,7 +14,11 @@ form.addEventListener('submit', function(e){
 //Aca termina
 
 //Aca empiezan los detalles del producto
-fetch('https://dummyjson.com/products/1')
+const qs = location.search;
+const qso = new URLSearchParams(qs);
+const id = qso.get('id')
+
+fetch(`https://dummyjson.com/products/${id}`)
     .then(function(response){
         return response.json();
     })
