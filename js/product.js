@@ -13,10 +13,9 @@ form.addEventListener('submit', function(e){
 })
 //Aca termina
 
-//Aca empiezan los detalles del producto
-const qs = location.search;
-const qso = new URLSearchParams(qs);
-const id = qso.get('id')
+let qs = location.search;
+let qsObj = new URLSearchParams(qs);
+let id = qsObj.get('id')
 
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function(response){
@@ -51,14 +50,51 @@ fetch(`https://dummyjson.com/products/${id}`)
         productTags.innerHTML = "";
         let tags = data.tags;
         let cantidad = tags.length;
-        if (cantidad > 3) {cantidad = 3;}
+        if (cantidad > 3) {cantidad = 3};
+
         for (let i = 0; i < cantidad; i++) {
             let nuevoTag = "<span class='tag'>#" + tags[i] + "</span>";
             productTags.innerHTML = productTags.innerHTML + nuevoTag;
         }
-        //FALTAN REVIEWS
+
+        reviews(data.id);
     })
 
     .catch(function(error){
-        console.log("Error:" + error);
-    })
+        console.log("Error: " + error);
+    });
+
+
+function reviews(id) {
+    fetch(`https://dummyjson.com/products/${id}/reviews`)
+        .then(function(response){
+            return response.json();})
+
+        .then(function(data){
+            let reviews = document.querySelector(".reviews-container");
+            reviews.innerHTML = "";
+
+            for (let i = 0; i < data.reviews.length; i++) {
+                let review = data.reviews[i];
+
+                let estrellas = "";
+                for (let i = 0; i < review.rating; i++) {
+                    estrellas = estrellas + "⭐️";}
+
+                for (let i = review.rating; i < 5; i++) {
+                    estrellas = estrellas + "☆";}
+
+                let fechaReview = review.date;
+                let fecha = "";
+                for (let i = 0; i < 10; i++) {
+                    fecha = fecha + fechaReview[i];}
+
+                reviews.innerHTML = reviews.innerHTML +
+                "<div class='review'>" +
+                    "<p>" + estrellas + " — " + fecha + " — " + review.reviewerName + "</p>" +
+                    "<p>" + review.comment + "</p>" +
+                "</div>";}})
+  
+        .catch(function(error){
+            console.log("Error:" + error);
+    });}
