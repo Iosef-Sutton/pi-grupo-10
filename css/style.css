@@ -388,3 +388,9 @@ h2{
       width: 300px;
     }
 }
+
+.saludo {
+    color: white;
+    text-align: right;
+}
+
