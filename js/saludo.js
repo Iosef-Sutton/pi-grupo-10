@@ -1,8 +1,17 @@
 //parte b de log in
-
+ 
 let userEmail = localStorage.getItem("userEmail");
+let saludo = document.querySelector(".saludo");
+let lista = document.querySelector(".lista");
 
-let saludo = document.querySelector("#saludo");
-let loginLink = document.querySelector("#login-link");
-let registerLink = document.querySelector("#register-link");
-let logoutLink = document.querySelector("#logout-link");
+if (userEmail) {
+    saludo.innerText = "Bienvenido: " + userEmail;
+    lista.innerHTML = `
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#" id="logout-link">Logout</a></li>
+    `;
+    let logoutLink = document.querySelector("#logout-link");
+    logoutLink.addEventListener("click", function () {
+        localStorage.removeItem("userEmail");
+    });
+}
