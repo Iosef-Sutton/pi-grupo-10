@@ -15,7 +15,8 @@ form.addEventListener('submit', function(e){
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let id = qsObj.get('id')
+let id = qsObj.get('id');
+console.log("ID recibido:", id);
 
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function(response){
@@ -49,13 +50,15 @@ fetch(`https://dummyjson.com/products/${id}`)
         let productTags = document.querySelector(".tags");
         productTags.innerHTML = "";
         let tags = data.tags;
-        let cantidad = tags.length;
-        if (cantidad > 3) {cantidad = 3};
-
-        for (let i = 0; i < cantidad; i++) {
-            let nuevoTag = "<span class='tag'>#" + tags[i] + "</span>";
-            productTags.innerHTML = productTags.innerHTML + nuevoTag;
-        }
+        if (tags){        
+            let cantidad = tags.length;
+            if (cantidad > 3){
+                cantidad = 3;
+            }
+            for (let i = 0; i < cantidad; i++) {
+                let nuevoTag = "<span class='tag'> #" + tags[i] + "</span>";
+                productTags.innerHTML = productTags.innerHTML + nuevoTag;
+        }}
 
         reviews(data.id);
     })
@@ -78,16 +81,16 @@ function reviews(id) {
                 let review = data.reviews[i];
 
                 let estrellas = "";
-                for (let i = 0; i < review.rating; i++) {
+                for (let e = 0; e < review.rating; e++) {
                     estrellas = estrellas + "⭐️";}
 
-                for (let i = review.rating; i < 5; i++) {
+                for (let e = review.rating; e < 5; e++) {
                     estrellas = estrellas + "☆";}
 
                 let fechaReview = review.date;
                 let fecha = "";
-                for (let i = 0; i < 10; i++) {
-                    fecha = fecha + fechaReview[i];}
+                for (let f = 0; f < 10; f++) {
+                    fecha = fecha + fechaReview[f];}
 
                 reviews.innerHTML = reviews.innerHTML +
                 "<div class='review'>" +
