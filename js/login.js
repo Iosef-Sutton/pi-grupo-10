@@ -7,7 +7,7 @@ form.addEventListener("submit", function () {
 
     if (email === "") {
         alert("El email es obligatorio");
-        return false; // detiene el envío
+        return false; 
     }
 
     if (password === "") {
