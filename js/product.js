@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e){
     if(buscador == ""){
         alert("Ingresa alguna palabra")
     } else if(buscador < 3){
-        alert("Igresa por lo menos 3 caracteres")
+        alert("Ingresa por lo menos 3 caracteres")
     } else{
     form.submit()
     }
