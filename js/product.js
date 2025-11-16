@@ -16,7 +16,6 @@ form.addEventListener('submit', function(e){
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let id = qsObj.get('id');
-console.log("ID recibido:", id);
 
 fetch(`https://dummyjson.com/products/${id}`)
     .then(function(response){
