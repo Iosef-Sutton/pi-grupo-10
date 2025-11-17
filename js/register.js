@@ -40,8 +40,8 @@ formRegister.addEventListener("submit", function (e) {
 
     if (!aceptaTerminos) {
         alert("Debes aceptar los términos y condiciones");
-        return false;
+        return;
     }
+    formRegister.submit();
 
-    return true;
 });
