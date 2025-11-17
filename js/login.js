@@ -1,26 +1,27 @@
 let form = document.querySelector("#login-form");
 
-form.addEventListener("submit", function () {
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
     if (email === "") {
         alert("El email es obligatorio");
-        return false; 
+        return; 
     }
 
     if (password === "") {
         alert("La contraseña es obligatoria");
-        return false;
+        return;
     }
 
     if (password.length < 6) {
         alert("La contraseña debe tener al menos 6 caracteres");
-        return false;
+        return;
     }
 
     localStorage.setItem("userEmail", email);
-    return true;
+     form.submit();
 
 });
