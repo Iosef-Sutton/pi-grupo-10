@@ -22,5 +22,5 @@ form.addEventListener("submit", function () {
 
     localStorage.setItem("userEmail", email);
 
-    return true; // permite que el formulario vaya a index.html
+    return true; 
 });

@@ -10,8 +10,4 @@ if (userEmail) {
         <li><a href="./index.html">Home</a></li>
         <li><a href="#" id="logout-link">Logout</a></li>
     `;
-    let logoutLink = document.querySelector("#logout-link");
-    logoutLink.addEventListener("click", function () {
-        localStorage.removeItem("userEmail");
-    });
 }
