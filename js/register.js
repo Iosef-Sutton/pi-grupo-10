@@ -1,8 +1,8 @@
-let formRegister = document.querySelector("register-form");
-let emailInput = document.querySelector("email");
-let passwordInput = document.querySelector("password");
-let password2Input = document.querySelector("password2");
-let terminosInput = document.querySelector("terminos");
+let formRegister = document.querySelector("#register-form");
+let emailInput = document.querySelector("#email");
+let passwordInput = document.querySelector("#password");
+let password2Input = document.querySelector("#password2");
+let terminosInput = document.querySelector("#terminos");
 
 formRegister.addEventListener("submit", function () {
 
