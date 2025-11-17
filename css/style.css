@@ -196,16 +196,18 @@ header{
   text-decoration: none;
   border-radius: 6px;
 }
+/*HAY QUE UNIR INDEX, CATEGORIA Y SEARCH*/
 
+/*Categoria*/
 
-.category-products{
+.product-list{
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
   margin: 10px;
 }
 
-.category-products article{
+.product-list article{
   display: flex;
   flex-direction: column;
   box-sizing:border-box;                 
@@ -215,27 +217,30 @@ header{
   border:1px solid #e0e0e0; 
   border-radius:12px;
   width: 32%;
+  height: 480px;
 }
 
-.category-products article img{
-  width: 80%;             
+.product-list article img{
+  width: 90%;             
   height: 250px;
   background:white;      
   border: 10px solid #fff; 
   border-bottom:1px solid #e0e0e0;
   align-self: center;
+  object-fit: contain; /* para que no se deforme la imagen*/
 }
 
-.category-products article h2{
+.product-list article h2{
   margin:12px 12px 6px;
   font-size:18px}
 
-.category-products article p{
-  margin:0 12px 12px;
+.product-list article p{
+  margin:0px 12px;
   color:dimgray;
+  font-size: 14px;
   }
 
-.category-products a{
+.product-list a{
   display: inline-block;
   margin: 10px 12px 14px;
   padding: 8px 12px;
@@ -355,8 +360,12 @@ h2{
 
 /*product*/
 .product-photo img{
-  height: 500px;
+  height: 400px;         
+  background:#fff;
+  border:1px solid #e0e0e0; 
+  border-radius:12px;
 }
+
 .reviews h2{
   text-align: left;
 }
@@ -366,7 +375,7 @@ h2{
 }
 .btn {
     display: inline-block;
-    margin-top: 20px;      
+    margin-top: 20px;    
     padding: 10px;
     background-color: #0b2a55;
     border: 1px solid #ccc;

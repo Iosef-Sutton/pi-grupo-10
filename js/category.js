@@ -18,7 +18,7 @@ let qsObj = new URLSearchParams(qs);
 let category = qsObj.get('category');
 
 let titulo = document.querySelector(".category-title");
-let productos = document.querySelector(".product-card");
+let productos = document.querySelector(".product-list");
 
 titulo.innerText = category;
 
@@ -37,7 +37,7 @@ fetch(`https://dummyjson.com/products/category/${category}`)
  
 //la api muestra tres imagenes del producto asiq ponemos producto.images[0] para que aparezca la primera
             todosProductos = todosProductos + 
-                `<article class="product">
+                `<article class="product-card">
                     <img src="${producto.images[0]}" alt="${producto.title}"> 
                     <h2>${producto.title}</h2>
                     <p>${producto.description}</p>
