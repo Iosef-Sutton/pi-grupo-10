@@ -8,6 +8,6 @@ if (userEmail) {
     saludo.innerText = "Bienvenido: " + userEmail;
     lista.innerHTML = `
         <li><a href="./index.html">Home</a></li>
-        <li><a href="#" id="logout-link">Logout</a></li>
+        <li><a href="#" class="logout-link">Logout</a></li>
     `;
 }
