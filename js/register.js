@@ -15,27 +15,27 @@ formRegister.addEventListener("submit", function (e) {
     
     if (email === "") {
         alert("El email es obligatorio");
-        return false;
+        return;
     }
 
     if (password === "") {
         alert("La contraseña es obligatoria");
-        return false;
+        return;
     }
 
     if (password.length < 6) {
         alert("La contraseña debe tener al menos 6 caracteres");
-        return false;
+        return;
     }
 
     if (password2 === "") {
         alert(" repetir la contraseña");
-        return false;
+        return;
     }
 
     if (password !== password2) {
         alert("Las contraseñas no coinciden");
-        return false;
+        return;
     }
 
     if (!aceptaTerminos) {

@@ -21,6 +21,6 @@ form.addEventListener("submit", function () {
     }
 
     localStorage.setItem("userEmail", email);
+    return true;
 
-    return true; 
 });
