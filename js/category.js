@@ -18,38 +18,38 @@ let qsObj = new URLSearchParams(qs);
 let category = qsObj.get('category');
 
 let titulo = document.querySelector(".category-title");
-let contenedor = document.querySelector(".category-products");
+let productos = document.querySelector(".category-products");
 
-// 3) Mostrar el nombre de la categoría
-titulo.innerText = "Productos de: " + category;
+titulo.innerText = category;
 
-// 4) Buscar los productos de esa categoría
+//lo hice igual a product
 fetch(`https://dummyjson.com/products/category/${category}`)
     .then(function(response){
         return response.json();
     })
     .then(function(data){
-        console.log(data.products);
+        console.log(data);
 
-        let html = "";
+        let todosProductos = "";
 
         for (let i = 0; i < data.products.length; i++) {
             let producto = data.products[i];
-
-            html += `
-                <article class="product-card">
-                    <img src="${producto.images[0]}" alt="${producto.title}">
+ 
+//la api muestra tres imagenes del producto asiq ponemos producto.images[0] para que aparezca la primera
+            todosProductos = todosProductos + 
+                `<article class="product">
+                    <img src="${producto.images[0]}" alt="${producto.title}"> 
                     <h2>${producto.title}</h2>
                     <p>${producto.description}</p>
                     <p>$ ${producto.price}</p>
                     <a class="btn" href="product.html?id=${producto.id}">Ver detalle</a>
-                </article>
-            `;
+                </article>`
+            ;
         }
 
-        // 5) Imprimir los productos
-        contenedor.innerHTML = html;
+        productos.innerHTML = todosProductos;
     })
+
     .catch(function(error){
         console.log("Error: " + error);
     });
