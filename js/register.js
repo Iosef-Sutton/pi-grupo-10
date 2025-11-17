@@ -4,7 +4,8 @@ let passwordInput = document.querySelector("#password");
 let password2Input = document.querySelector("#password2");
 let terminosInput = document.querySelector("#terminos");
 
-formRegister.addEventListener("submit", function () {
+formRegister.addEventListener("submit", function (e) {
+     e.preventDefault();
 
     let email = emailInput.value;
     let password = passwordInput.value;
