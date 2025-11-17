@@ -110,15 +110,15 @@ header{
 .Category1{
   display:flex;
   flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .Category1 article{
-  box-sizing:border-box;
-  width: 32%; 
-  height: 580px;                   
-  padding:10px;
-  margin-right: 0.65%;  
-  margin-left: 0.65%;                            
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;                 
+  padding:10px;                           
   margin-bottom:20px;           
   background:#fff;
   border:1px solid #e0e0e0; 
@@ -126,8 +126,6 @@ header{
 }
 
 .Category1 article img{
-  width:95%;
-  height: 50%;
   background:white;      
   border: 10px solid #fff; 
   border-bottom:1px solid #e0e0e0;
@@ -155,32 +153,34 @@ header{
 .Category2{
   display:flex;
   flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .Category2 article{
-  box-sizing:border-box;
-  width: 32%;
-  height: 580px;                   
-  padding:10px;
-  margin-right: 0.65%;  
-  margin-left: 0.65%;               
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;                 
+  padding:10px;                           
   margin-bottom:20px;           
   background:#fff;
   border:1px solid #e0e0e0; 
   border-radius:12px;
+  width: 32%;
 }
 
 .Category2 article img{
-  width:95%;
-  height: 50%;
+  width: 80%;             
+  height: 250px;
   background:white;      
   border: 10px solid #fff; 
   border-bottom:1px solid #e0e0e0;
+  align-self: center;
 }
 
 .Category2 article h2{
   margin:12px 12px 6px;
-  font-size:18px} 
+  font-size:18px}
 
 .Category2 article p{
   margin:0 12px 12px;
@@ -196,6 +196,55 @@ header{
   text-decoration: none;
   border-radius: 6px;
 }
+
+
+.category-products{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.category-products article{
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;                 
+  padding:10px;                           
+  margin-bottom:20px;           
+  background:#fff;
+  border:1px solid #e0e0e0; 
+  border-radius:12px;
+  width: 32%;
+}
+
+.category-products article img{
+  width: 80%;             
+  height: 250px;
+  background:white;      
+  border: 10px solid #fff; 
+  border-bottom:1px solid #e0e0e0;
+  align-self: center;
+}
+
+.category-products article h2{
+  margin:12px 12px 6px;
+  font-size:18px}
+
+.category-products article p{
+  margin:0 12px 12px;
+  color:dimgray;
+  }
+
+.category-products a{
+  display: inline-block;
+  margin: 10px 12px 14px;
+  padding: 8px 12px;
+  background: #0b2a55;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
 /*Hasta aca*/
 
 /*Footer*/

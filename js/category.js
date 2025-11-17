@@ -18,7 +18,7 @@ let qsObj = new URLSearchParams(qs);
 let category = qsObj.get('category');
 
 let titulo = document.querySelector(".category-title");
-let productos = document.querySelector(".category-products");
+let productos = document.querySelector(".product-card");
 
 titulo.innerText = category;
 

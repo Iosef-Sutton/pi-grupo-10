@@ -46,38 +46,44 @@ fetch(`https://dummyjson.com/products/${id}`)
         let descripcion = document.querySelector(".descripcion");
         descripcion.innerHTML = data.description;
 
+        let btn = document.querySelector(".btn");
+        btn.href = "category.html?category=" + data.category
+
+//tags
         let productTags = document.querySelector(".tags");
         productTags.innerHTML = "";
-        let tags = data.tags;
-        if (tags){        
+        let tags = []
+
+        if (data.tags){
+            tags = data.tags
+        }
+
+        if (tags.length > 0){
             let cantidad = tags.length;
             if (cantidad > 3){
-                cantidad = 3;
-            }
+                cantidad = 3;}
             for (let i = 0; i < cantidad; i++) {
                 let nuevoTag = "<span class='tag'> #" + tags[i] + "</span>";
                 productTags.innerHTML = productTags.innerHTML + nuevoTag;
-        }}
+            }}
+        else {
+            productTags.innerHTML = "";
+        }
 
-        reviews(data.id);
-    })
+//reviews
+        let reviews = document.querySelector(".reviews-container");
+        reviews.innerHTML = "";
 
-    .catch(function(error){
-        console.log("Error: " + error);
-    });
+        let allReviews;
 
+        if (data.reviews){
+            allReviews = data.reviews} 
+        else {
+            allReviews = [];}
 
-function reviews(id) {
-    fetch(`https://dummyjson.com/products/${id}/reviews`)
-        .then(function(response){
-            return response.json();})
-
-        .then(function(data){
-            let reviews = document.querySelector(".reviews-container");
-            reviews.innerHTML = "";
-
-            for (let i = 0; i < data.reviews.length; i++) {
-                let review = data.reviews[i];
+        if (allReviews.length > 0){
+            for (let i = 0; i < allReviews.length; i++) {
+                let review = allReviews[i];
 
                 let estrellas = "";
                 for (let e = 0; e < review.rating; e++) {
@@ -95,8 +101,13 @@ function reviews(id) {
                 "<div class='review'>" +
                     "<p>" + estrellas + " — " + fecha + " — " + review.reviewerName + "</p>" +
                     "<p>" + review.comment + "</p>" +
-                "</div>";}})
+                "</div>";
+            }}
+        else {
+            reviews.innerHTML = "No hay reviews"
+        }
+    })
   
         .catch(function(error){
             console.log("Error:" + error);
-    });}
+    });
