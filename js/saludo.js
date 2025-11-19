@@ -4,7 +4,7 @@ let userEmail = localStorage.getItem("userEmail");
 let saludo = document.querySelector(".saludo");
 let lista = document.querySelector(".lista");
 
-if (userEmail) {
+if (userEmail && saludo && lista) {
     saludo.innerText = "Bienvenido: " + userEmail;
     lista.innerHTML = `
         <li><a href="./index.html">Home</a></li>
