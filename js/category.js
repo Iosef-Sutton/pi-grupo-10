@@ -11,7 +11,7 @@ form.addEventListener('submit', function(e){
     form.submit()
     }
 })
-//Aca termina
+//Aca termnai
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
