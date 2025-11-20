@@ -107,7 +107,8 @@ header{
   display: none;
 }
 
-.Category1{
+.Category1,
+.Category2 {
   display:flex;
   flex-wrap:wrap;
   justify-content: space-between;
@@ -395,9 +396,7 @@ h2{
         display: none;
     }
 
-    .navbar ul{
-      flex-direction: column;
-    }
+
 
     .navbar li{
       margin: 3px 0px 3px 0px;
@@ -421,17 +420,25 @@ h2{
     }
 
     .content{
-        margin-top: 30px;
+      margin-top: 30px;
     }
 
     .Category1{
-        width: 100%;
-        margin: 0px;
+      width: 100%;
     }
 
     .Category1 article{
         width: 85%;
         margin-left: 22px;
+    }
+
+    .Category2 article{
+      width: 85%;
+      margin-left: 22px;
+    }
+
+    .Category2{
+        width: 100%;
     }
 
     footer{
