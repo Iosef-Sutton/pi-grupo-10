@@ -389,7 +389,7 @@ h2{
     color: #fff;
 }
 
-
+/*responsive*/
 @media (max-width: 420px){
     .search{
         display: none;
@@ -413,7 +413,7 @@ h2{
 
     .sidebar{
         width: 100%;
-        height: 850px;
+        height: auto; 
     }
 
     .page{
@@ -450,10 +450,20 @@ h2{
     .login-container{
       width: 300px;
     }
-}
+
+    .product-list article{
+      width: 100%; 
+    }
+
+    .login main {
+      height: auto;
+    }
+
+    .register main {
+      height: auto;
+    }}
 
 .saludo {
     color: white;
     text-align: right;
 }
-
