@@ -18,49 +18,44 @@ form.addEventListener('submit', function(e){
 //Aca empieza el resultado de la busqueda
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let buscador = qsObj.get('buscador');
+let buscador = qsObj.get('search');
+
+console.log(buscador)
 
 const busqueda = document.querySelector('.section-title')
-busqueda.innerHTML += `${buscador}`
+busqueda.innerHTML += `Resultados para: ${buscador}`
 
 const oculto = document.querySelector('.section-title-hidden')
+const category1 = document.querySelector('.product-list')
 
-fetch('https://dummyjson.com/products?limit=194')
+fetch('https://dummyjson.com/products/search?q=' + buscador)
     .then(function(response){
         return response.json()
     })
-    .then(function(data) {
-        console.log(data.products);
+    .then(function(data){
+        console.log(data);
+        let producto = data.products;
+        let products = "";
         for(let i = 0; i < data.products.length; i++){
-            let categoria = data.products.category
-            let nombre_producto = data.products.title 
-            let producto = data.products
-            if(categoria == buscador){
                 products += `<article>
-                <img src="${producto.images[0]}" alt="Producto ${1}">
-                <h2>${producto.title}</h2>
-                <p>${producto.description}</p>
-                <p>$ ${producto.price}</p>
-                <div><a href="./product.html?id=${producto.id}">Ver detalle</a></div>
+                <img src="${producto[i].images[0]}" alt="Producto ${i}">
+                <h2>${producto[i].title}</h2>
+                <p>${producto[i].description}</p>
+                <p>$ ${producto[i].price}</p>
+                <div><a href="./product.html?id=${producto[i].id}">Ver detalle</a></div>
                 </article>`
-                category1.innerHTML = products;
-            }else if(nombre_producto == buscador){
-                products += `<article>
-                <img src="${producto.images[0]}" alt="Producto ${1}">
-                <h2>${producto.title}</h2>
-                <p>${producto.description}</p>
-                <p>$ ${producto.price}</p>
-                <div><a href="./product.html?id=${producto.id}">Ver detalle</a></div>
-                </article>`
-                category1.innerHTML = products;
-            }else{
-                busqueda.style.display = 'none'
-                oculto.style.display =  'flex'
-                oculto.innerHTML += `${buscador}`
-            }
-        }
-    })
+                
+    }
+
+    category1.innerHTML = products;
+    if(products == ''){
+        busqueda.style.display = 'none'
+        oculto.style.display = 'flex'
+        oculto.innerHTML += `No hay resultados para: ${buscador}`
+
+    }
+
+})
     .catch(function(error) {
         console.log("Error: " + error);
     })
-
