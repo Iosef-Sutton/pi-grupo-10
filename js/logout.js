@@ -10,7 +10,7 @@ if (logoutLink) {
     const listaElemento = document.querySelector(".lista");
 
     if (saludoElemento) {
-    saludo.innerText = ""; 
+       saludoElemento.innerText = ""; 
     }
 
     if (listaElemento) {
