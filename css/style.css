@@ -390,10 +390,14 @@ h2{
     border-radius: 6px;
     color: #fff;
 }
-  
-  .saludo{
-    color: #fff;
-  } 
+.derHeader{
+  display: flex;         
+  align-items: center;   
+}
+.saludo{
+  color: #fff;
+  margin-right: 15px; 
+} 
   
 /*responsive*/
 @media (max-width: 420px){
