@@ -390,6 +390,10 @@ h2{
     color: #fff;
 }
   
+  .saludo{
+    color: #fff;
+  } 
+  
 /*responsive*/
 @media (max-width: 420px){
     .search{
