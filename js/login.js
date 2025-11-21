@@ -6,6 +6,10 @@ form.addEventListener("submit", function (e) {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
+    let passwordError = document.querySelector("#password-error");
+    passwordError.innerText = "";
+
+
     if (email === "") {
         alert("El email es obligatorio");
         return; 
@@ -17,7 +21,7 @@ form.addEventListener("submit", function (e) {
     }
 
     if (password.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres");
+        passwordError.innerText = "La contraseña debe tener al menos 6 caracteres";
         return;
     }
 
