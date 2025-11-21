@@ -6,17 +6,19 @@ form.addEventListener("submit", function (e) {
     let email = document.querySelector("#email").value;
     let password = document.querySelector("#password").value;
 
+    let emailError = document.querySelector("#email-error");
     let passwordError = document.querySelector("#password-error");
+
+    emailError.innerText = "";
     passwordError.innerText = "";
 
-
     if (email === "") {
-        alert("El email es obligatorio");
+        emailError.innerText ="El email es obligatorio";
         return; 
     }
 
     if (password === "") {
-        alert("La contraseña es obligatoria");
+        passwordError.innerText="La contraseña es obligatoria";
         return;
     }
 
