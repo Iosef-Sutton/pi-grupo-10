@@ -398,27 +398,18 @@ h2{
   color: #fff;
   margin-right: 15px; 
 } 
+.error-msg {
+    color: black;        
+    font-size: 14px;
+    margin-top: 4px;     
+    margin-bottom: 0;    
+}
+
   
 /*responsive*/
 @media (max-width: 420px){
-    header{
-      height: auto;
-      flex-direction: column;
-    }
-
-    .topFila{
-      displa
-    }
-    .logo{
-      height: 70px;
-      margin: 10px 0;
-      display: flex;
-    }
-
     .search{
-      width: 90%;
-      justify-content: center;
-      margin-top: 10px;
+      display: none;
     }
 
     .navbar ul{
@@ -428,7 +419,6 @@ h2{
 
     .derHeader{
       display: flex;
-      width: 100%;
       flex-direction: column;
       align-items: flex-end;
     }
@@ -508,20 +498,9 @@ h2{
     .logo{
       height: 70px;
       margin: 10px 0;
-      display: flex;
-      justify-content: flex-start;
-    }
+    }}
 
-     .saludo{
-      display: block;
-      max-width: 60%;           
-      text-align: right;         
-      font-size: 12px;           
-      color: white;
-      margin-top: 10px;
-      margin-bottom: 5px;
-      }}
-    
+     
 
     
 
