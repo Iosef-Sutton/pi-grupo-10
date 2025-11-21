@@ -488,6 +488,11 @@ h2{
       height: auto;
     }
 
+    .logo{
+      height: 70px;
+      margin: 10px 0;
+    }
+
      .saludo{
       display: block;
       max-width: 60%;           
