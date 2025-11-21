@@ -1,8 +1,10 @@
 //Aca empieza el filtro de la barra buscadora
-const form = document.querySelector(".search")
+const form = document.querySelector(".search ")
+const input = document.querySelector(" .search input")
+
 form.addEventListener('submit', function(e){
     e.preventDefault()
-    const buscador = this.buscador.value.length
+    let buscador = input.value.length
     if(buscador == ""){
         alert("Ingresa alguna palabra")
     } else if(buscador < 3){
