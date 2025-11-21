@@ -224,17 +224,15 @@ header{
   border:1px solid #e0e0e0; 
   border-radius:12px;
   width: 32%;
-  height: 480px;
 }
 
 .product-list article img{
-  width: 90%;             
+  width: 80%;             
   height: 250px;
   background:white;      
   border: 10px solid #fff; 
   border-bottom:1px solid #e0e0e0;
   align-self: center;
-  object-fit: contain; /* para que no se deforme la imagen*/
 }
 
 .product-list article h2{
@@ -244,7 +242,6 @@ header{
 .product-list article p{
   margin:0px 12px;
   color:dimgray;
-  font-size: 14px;
   }
 
 .product-list a{
@@ -255,6 +252,7 @@ header{
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
+  width: 80px;
 }
 
 /*Hasta aca*/
