@@ -1,47 +1,55 @@
 let formRegister = document.querySelector("#register-form");
-let emailInput = document.querySelector("#email");
-let passwordInput = document.querySelector("#password");
-let password2Input = document.querySelector("#password2");
-let terminosInput = document.querySelector("#terminos");
 
 formRegister.addEventListener("submit", function (e) {
-     e.preventDefault();
+    e.preventDefault();
 
-    let email = emailInput.value;
-    let password = passwordInput.value;
-    let password2 = password2Input.value;
-    let aceptaTerminos = terminosInput.checked;
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+    let password2 = document.querySelector("#password2").value;
+    let terminos = document.querySelector("#terminos").checked;
+
+    
+    let emailError = document.querySelector("#email-error");
+    let passwordError = document.querySelector("#password-error");
+    let password2Error = document.querySelector("#password2-error");
+    let terminosError = document.querySelector("#terminos-error");
+
+    
+    emailError.innerText = "";
+    passwordError.innerText = "";
+    password2Error.innerText = "";
+    terminosError.innerText = "";
 
     
     if (email === "") {
-        alert("El email es obligatorio");
+        emailError.innerText = "El email es obligatorio";
         return;
     }
 
     if (password === "") {
-        alert("La contraseña es obligatoria");
+        passwordError.innerText = "La contraseña es obligatoria";
         return;
     }
 
     if (password.length < 6) {
-        alert("La contraseña debe tener al menos 6 caracteres");
+        passwordError.innerText = "Debe tener al menos 6 caracteres";
         return;
     }
 
     if (password2 === "") {
-        alert(" repetir la contraseña");
+        password2Error.innerText = "Repite la contraseña";
         return;
     }
 
     if (password !== password2) {
-        alert("Las contraseñas no coinciden");
+        password2Error.innerText = "Las contraseñas no coinciden";
         return;
     }
 
-    if (!aceptaTerminos) {
-        alert("Debes aceptar los términos y condiciones");
+    if (!terminos) {
+        terminosError.innerText = "Debes aceptar los términos";
         return;
     }
+
     formRegister.submit();
-
 });
