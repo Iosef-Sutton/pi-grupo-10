@@ -404,7 +404,7 @@ h2{
 }
 
   
-/*responsive..*/
+/*responsive....*/
 @media (max-width: 420px){
   header{
     flex-wrap: wrap;
