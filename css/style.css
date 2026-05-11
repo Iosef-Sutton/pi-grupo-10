@@ -203,7 +203,6 @@ header{
   text-decoration: none;
   border-radius: 6px;
 }
-/*HAY QUE UNIR INDEX, CATEGORIA Y SEARCH*/
 
 /*Categoria*/
 
@@ -408,7 +407,7 @@ h2{
 @media (max-width: 420px){
   header{
     flex-wrap: wrap;
-    height: 35VH;
+    height: auto;
   }
   header div{
     width: 50%;
@@ -418,6 +417,13 @@ h2{
   .search{
     width: 100%;
     order: 3
+  }
+
+  .search input {
+    margin-bottom: 15px;
+  }
+  .search button{
+    margin-bottom: 15px;
   }
 
     .navbar ul{
